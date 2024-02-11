@@ -7,6 +7,7 @@ import { IoLogoInstagram } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 import { FaAngleDoubleDown } from "react-icons/fa";
+import cv from "../assets/Mostafa Ahmed.pdf";
 const Hero = () => {
   // array of social icons
   let dataSocial = [
@@ -218,6 +219,8 @@ const Hero = () => {
             })}
           </div>
           <motion.a
+            target="_blank"
+            href={cv}
             initial={{
               opacity: 0,
               y: 40,
