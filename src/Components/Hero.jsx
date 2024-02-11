@@ -7,7 +7,7 @@ import { IoLogoInstagram } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 import { FaAngleDoubleDown } from "react-icons/fa";
-import cv from "../assets/Mostafa Ahmed.pdf";
+import cv from "../assets/Mostafa Ahmed.cv.pdf";
 const Hero = () => {
   // array of social icons
   let dataSocial = [
