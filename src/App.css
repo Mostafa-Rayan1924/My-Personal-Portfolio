@@ -1,0 +1,212 @@
+* {
+  font-family: "Cairo Play", sans-serif;
+  scroll-behavior: smooth;
+}
+html {
+  overflow-x: hidden;
+}
+.dark {
+  background-image: url(./assets/darkBg.jpg) !important;
+  color: white !important;
+}
+body {
+  background-image: url(./assets/whiteBg.jpg) !important;
+  background-size: cover;
+  background-position: center;
+  color: black !important;
+}
+
+.active {
+  opacity: 1 !important;
+}
+.header ul li a:not(.active) {
+  opacity: 0.3;
+}
+.header ul li a:not(.active):hover {
+  opacity: 1;
+}
+.mobileNav {
+  width: calc(100% - 30px);
+}
+@media (max-width: 350px) {
+  .heroIphone {
+    width: 400px !important;
+    height: 400px !important;
+  }
+}
+@media (max-width: 320px) {
+  .heroIphone {
+    width: 270px !important;
+    height: 270px !important;
+  }
+}
+.underColor {
+  text-decoration-color: #f4280d;
+}
+@media (max-width: 1119px) and (min-width: 1022px) {
+  .heroName,
+  .autoWritingJop {
+    font-size: 2rem !important;
+  }
+}
+@media (max-width: 360px) {
+  .heroName,
+  .autoWritingJop {
+    font-size: 22px !important;
+  }
+  .h3OfHero {
+    font-size: 18px !important;
+  }
+  .parentOfSkills {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+}
+@media (max-width: 360px) {
+  .rightContainer,
+  .leftContainer {
+    padding-left: 30px !important;
+    text-align: center;
+  }
+  .leftContainer span,
+  .rightContainer span {
+    display: none;
+  }
+  .certLink {
+    top: 0 !important;
+    right: 14px !important;
+  }
+}
+/* services */
+.cardAnimate:hover::before {
+  width: 310px;
+  height: 360px;
+  /* color: ; */
+  animation: animate 2s linear infinite;
+}
+@keyframes animate {
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+@media (max-width: 360px) {
+  .cardAnimate {
+    width: 250px !important;
+    height: 290px !important;
+  }
+  .cardAnimate::before {
+    width: 250px !important;
+    height: 290px !important;
+  }
+  .cardAnimate:hover::before {
+    width: 255px !important;
+    height: 295px !important;
+  }
+}
+/* end services */
+body.dark::-webkit-scrollbar {
+  width: 0.7rem;
+  background-color: #2e2e2e;
+}
+body.dark::-webkit-scrollbar {
+  background-color: #2e2e2e;
+}
+body.dark::-webkit-scrollbar-thumb {
+  background-color: orangered;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 30px orangered;
+}
+body::-webkit-scrollbar {
+  width: 0.7rem;
+  background-color: #eee;
+}
+body::-webkit-scrollbar {
+  background-color: #eee;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: orangered;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 30px orangered;
+}
+/* slider */
+.dark .splide__slide.is-active {
+  position: relative;
+  border: none !important;
+  opacity: 1;
+  background-color: #2e2e2e;
+  border: none !important;
+}
+.splide__slide.is-active {
+  background-color: #b6b6b6;
+  position: relative;
+  border: none !important;
+  opacity: 1;
+  border: none !important;
+}
+.dark .splide__slide:not(.is-active) {
+  background-color: #2e2e2e;
+  opacity: 0.3;
+  border: none !important;
+}
+.splide__slide:not(.is-active) {
+  background-color: #b6b6b6;
+  opacity: 0.4;
+  border: none !important;
+}
+.splide__pagination {
+  bottom: -3.5em !important;
+}
+.splide__pagination__page.is-active {
+  background-color: #f83c23 !important;
+}
+.splide__pagination__page {
+  background-color: #2e2e2e !important;
+  border: 0 !important;
+  border-radius: 2.5px !important;
+  display: inline-block !important;
+  height: 5px !important;
+  margin: 3px !important;
+  padding: 0 !important;
+  position: relative !important;
+  transition: background-color 0.2s linear !important;
+  width: 20px !important;
+}
+.splide__arrow {
+  position: absolute !important;
+  background-color: none !important;
+  font-size: 35px;
+}
+.splide__arrow.splide__arrow--next {
+  right: -20px;
+}
+.splide__arrow.splide__arrow--prev {
+  left: -20px;
+}
+@media (max-width: 991px) {
+  .splide__arrow {
+    display: none !important;
+  }
+}
+.splide__arrow svg {
+  fill: #ed3c25 !important;
+}
+.activeTab {
+  color: white;
+  background-image: linear-gradient(180deg, #ff4305 0%, #f58700 100%);
+}
+.tabs li:not(.activeTab) {
+  color: #777;
+}
+.tabs li:not(.activeTab):hover {
+  color: white;
+}
+.projectParent:hover .imgParent::before {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+@media (max-width: 350px) {
+  .ProName {
+    font-size: 16px !important;
+  }
+}
