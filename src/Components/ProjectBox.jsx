@@ -2,6 +2,7 @@ import { FaLink } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
 
 const ProjectBox = ({ item }) => {
+  console.log();
   return (
     <div className="rounded-lg  overflow-hidden hover:-translate-y-2.5 projectParent group transition-all duration-300">
       <div className="relative imgParent before:transition-all duration-300 before:absolute before:top-0 before:left-0  before:w-full before:h-full">
@@ -14,7 +15,11 @@ const ProjectBox = ({ item }) => {
           <a
             target="_blank"
             className=" bg-bgGradient relative -left-6 group-hover:left-0 transition-all duration-300 w-[45px] h-[45px] text-xl grid place-items-center text-white rounded-full"
-            href={item.linkProject}>
+            href={
+              item.name == "Mg Company"
+                ? "https://final-mg1.onrender.com/"
+                : item.linkProject
+            }>
             <FaLink />
           </a>
           <a
