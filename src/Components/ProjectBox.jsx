@@ -17,7 +17,7 @@ const ProjectBox = ({ item }) => {
             className=" bg-bgGradient relative -left-6 group-hover:left-0 transition-all duration-300 w-[45px] h-[45px] text-xl grid place-items-center text-white rounded-full"
             href={
               item.name == "Mg Company"
-                ? "https://final-mg1.onrender.com/"
+                ? "https://final-mg-sys.onrender.com/"
                 : item.linkProject
             }>
             <FaLink />
