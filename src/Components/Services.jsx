@@ -3,9 +3,7 @@ import htmlImg from "../assets/html.svg";
 import cssImg from "../assets/css.svg";
 import reactImg from "../assets/ReactIMG.png";
 import nextImg from "../assets/nextIMG.svg";
-
 import js from "../assets/java.png";
-
 import { IoLogoAppleAr } from "react-icons/io5";
 import { RiJavascriptFill } from "react-icons/ri";
 import { motion } from "framer-motion";
