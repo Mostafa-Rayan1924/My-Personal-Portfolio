@@ -133,7 +133,7 @@ const Projects = ({ AllBtn = false, moreBtn = true, backBtn = false }) => {
               handleFilter(e.target.id);
             }}
             className={`${
-              activeBtn == "Next" ? "activeTab" : ""
+              activeBtn == "NextJs" ? "activeTab" : ""
             }   cursor-pointer hover:shadow-[0_0_40px_5px_rgba(255,68,0,0.292)] hover:text-white text-[1.2rem] sm:text-[1.4rem] transition-all duration-300 hover:bg-bgGradient flex items-center justify-center  w-[136px] h-[40px]  `}>
             NextJs
           </li>
