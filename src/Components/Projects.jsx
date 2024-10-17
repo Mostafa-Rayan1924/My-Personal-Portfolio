@@ -46,12 +46,10 @@ const Projects = ({ AllBtn = false, moreBtn = true, backBtn = false }) => {
     return <ProjectBox key={i} item={item} />;
   });
   function handleFilter(e) {
-    alert(e);
     setActiveBtn(e);
     axios
       .get(`https://mr-portfolio1.onrender.com/mr/project?tech=${e}`)
       .then((response) => {
-        console.log(response);
         // Handle successful response
         setProjects(response.data.data.result);
       })
