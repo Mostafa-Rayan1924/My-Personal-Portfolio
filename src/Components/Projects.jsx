@@ -46,10 +46,12 @@ const Projects = ({ AllBtn = false, moreBtn = true, backBtn = false }) => {
     return <ProjectBox key={i} item={item} />;
   });
   function handleFilter(e) {
+    alert(e);
     setActiveBtn(e);
     axios
       .get(`https://mr-portfolio1.onrender.com/mr/project?tech=${e}`)
       .then((response) => {
+        console.log(response);
         // Handle successful response
         setProjects(response.data.data.result);
       })
@@ -98,12 +100,12 @@ const Projects = ({ AllBtn = false, moreBtn = true, backBtn = false }) => {
             Favorite
           </li>
           <li
-            id="Html&Css"
+            id="Html%26Css"
             onClick={(e) => {
               handleFilter(e.target.id);
             }}
             className={`${
-              activeBtn == "Html&Css" ? "activeTab" : ""
+              activeBtn == "Html%26Css" ? "activeTab" : ""
             }   cursor-pointer hover:shadow-[0_0_40px_5px_rgba(255,68,0,0.292)] hover:text-white text-[1.2rem] sm:text-[1.4rem] transition-all duration-300 hover:bg-bgGradient flex items-center justify-center  w-[136px] h-[40px]  `}>
             Html&Css
           </li>
@@ -118,12 +120,12 @@ const Projects = ({ AllBtn = false, moreBtn = true, backBtn = false }) => {
             Javascript
           </li>
           <li
-            id="React&Tailwind"
+            id="React%26Tailwind"
             onClick={(e) => {
               handleFilter(e.target.id);
             }}
             className={`${
-              activeBtn == "React&Tailwind" ? "activeTab" : ""
+              activeBtn == "React%26Tailwind" ? "activeTab" : ""
             }   cursor-pointer hover:shadow-[0_0_40px_5px_rgba(255,68,0,0.292)] hover:text-white text-[1.2rem] sm:text-[1.4rem] transition-all duration-300 hover:bg-bgGradient flex items-center justify-center  w-[136px] h-[40px]  `}>
             ReactJs
           </li>
