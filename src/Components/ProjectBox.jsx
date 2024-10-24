@@ -1,5 +1,6 @@
 import { FaLink } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
+import { IoIosList } from "react-icons/io";
 
 const ProjectBox = ({ item }) => {
   console.log();
@@ -31,7 +32,7 @@ const ProjectBox = ({ item }) => {
         </div>
       </div>
       <div className="bg-[#c8c8c8] capitalize dark:bg-[#2E2E2E] p-2">
-        <div className="flex items-center mb-3 flex-wrap justify-between">
+        <div className="flex items-center border-b border-[#969696] dark:border-[#484848] pb-[15px] mb-3 flex-wrap justify-between">
           <h2 className="text-lg ProName ">{item.name}</h2>
           <div className="flex items-center gap-2 ">
             {item.techImage.map((item, index) => {
@@ -45,7 +46,11 @@ const ProjectBox = ({ item }) => {
             })}
           </div>
         </div>
-        <p className="text-main font-bold text-center">
+        <p className="dark:text-[#a8b3cf] text-slate-700 font-bold text-center flex justify-center items-center gap-1">
+          <IoIosList
+            className="text-slate-500 dark:text-orange-500 font-bold"
+            size={20}
+          />
           {item.tech == "JS" ? "Javascript" : item.tech}
         </p>
       </div>
