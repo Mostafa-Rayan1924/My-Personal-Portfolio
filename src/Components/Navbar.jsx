@@ -5,6 +5,8 @@ import { SlMenu } from "react-icons/sl";
 import { motion } from "framer-motion";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import { useEffect, useState } from "react";
+import { HiDotsHorizontal } from "react-icons/hi";
+
 const Navbar = () => {
   let [mode, setMode] = useState();
   let [openNav, setOpenNav] = useState(false);
@@ -33,7 +35,7 @@ const Navbar = () => {
       <div className="container flex items-center relative justify-between flex-wrap">
         {/* logo */}
         <a
-          className="cursor-pointer"
+          className="cursor-pointer "
           onClick={() => {
             scrollTo({ top: 0 });
           }}>
@@ -96,6 +98,7 @@ const Navbar = () => {
         {/* links on laptop */}
         <ul className="hidden items-center gap-[30px] md:flex">
           <motion.li
+            className="relative group"
             initial={{
               translateY: 40,
               opacity: 0,
@@ -117,8 +120,13 @@ const Navbar = () => {
               className="text-[1.3rem] transition-all  duration-300  cursor-pointer">
               Home
             </Link>
+            <HiDotsHorizontal
+              size={20}
+              className=" text-orange-500 absolute opacity-0 -bottom-8 group-hover:opacity-[1] group-hover:-bottom-4  transition-all duration-500 left-1/2 translate-x-[-50%]"
+            />
           </motion.li>
           <motion.li
+            className="relative group"
             initial={{
               translateY: 40,
               opacity: 0,
@@ -140,8 +148,13 @@ const Navbar = () => {
               className="text-[1.3rem]   transition-all duration-300 cursor-pointer">
               About me
             </Link>
+            <HiDotsHorizontal
+              size={20}
+              className=" text-orange-500 absolute opacity-0 -bottom-8 group-hover:opacity-[1] group-hover:-bottom-4  transition-all duration-500 left-1/2 translate-x-[-50%]"
+            />
           </motion.li>
           <motion.li
+            className="relative group"
             initial={{
               translateY: 40,
               opacity: 0,
@@ -163,8 +176,13 @@ const Navbar = () => {
               className="text-[1.3rem] transition-all duration-300 cursor-pointer">
               Services
             </Link>
+            <HiDotsHorizontal
+              size={20}
+              className=" text-orange-500 absolute opacity-0 -bottom-8 group-hover:opacity-[1] group-hover:-bottom-4  transition-all duration-500 left-1/2 translate-x-[-50%]"
+            />
           </motion.li>
           <motion.li
+            className="relative group"
             initial={{
               translateY: 40,
               opacity: 0,
@@ -186,6 +204,10 @@ const Navbar = () => {
               className="text-[1.3rem] transition-all duration-300 cursor-pointer">
               Portfolio
             </Link>
+            <HiDotsHorizontal
+              size={20}
+              className=" text-orange-500 absolute opacity-0 -bottom-8 group-hover:opacity-[1] group-hover:-bottom-4  transition-all duration-500 left-1/2 translate-x-[-50%]"
+            />
           </motion.li>
         </ul>
         {/* btns and dark on laptop */}
