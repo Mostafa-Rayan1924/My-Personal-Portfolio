@@ -18,7 +18,7 @@ const About = () => {
   }
   return (
     <div id="About" className="mt-[100px] lg:mt-[196px] mb-[100px]">
-      <div className="container text-center md:text-start grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="container text-center md:text-start grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
         <motion.div
           initial={{
             scale: 0,
@@ -28,19 +28,21 @@ const About = () => {
             transition: {
               duration: 0.8,
             },
-          }}>
+          }}
+          className="space-y-2 md:space-y-3 ">
           <h3 className="text-main font-bold text-3xl">About Me</h3>
-          <h2 className="text-[25px] md:text-[32px] lg:text-[40px] md:leading-[54.6px] my-3">
-            What My Programming <br /> {type == "skills" ? "Skills " : "Tools "}
-            Include?
+          <h2 className="text-[22px] w-full  md:text-[32px] lg:text-[40px] md:leading-[54.6px]">
+            What Are My Programming
+            <span className="ml-1 text-main ">
+              {type == "skills" ? "Skills " : "Tools "}
+            </span>
           </h2>
           <p
             className=" text-xl sm:text-[24px] text-gray-700
-           dark:text-gray-400 leading-[31.2px] mb-8">
-            this is my {type == "skills" ? "Skills" : "Tools"} which i used
-            <br /> in my programming life
+           dark:text-gray-400 leading-[31.2px]">
+            Here’s what I’ve mastered throughout my coding journey.
           </p>
-          <div className="flex overflow-hidden mx-auto md:mx-0 w-fit bg-[#9e9e9e] text-white  dark:bg-[#2E2E2E] rounded-[20px]">
+          <div className="flex  overflow-hidden mx-auto md:mx-0 w-fit bg-[#9e9e9e] text-white  dark:bg-[#2E2E2E] rounded-[20px]">
             <button
               onClick={(e) => {
                 handleFilter(e.target.id);
@@ -73,7 +75,7 @@ const About = () => {
               duration: 0.8,
             },
           }}
-          className="grid parentOfSkills grid-cols-4 lg:grid-cols-5 place-content-center gap-4 mt-10 lg:mt-0">
+          className="grid parentOfSkills grid-cols-4 lg:grid-cols-5 place-content-center gap-4 mt-6 lg:mt-0">
           {type == "skills"
             ? filterBySkills.map((item) => {
                 return (
@@ -92,8 +94,9 @@ const About = () => {
                       },
                     }}
                     key={item.id}
-                    className="dark:bg-[#2E2E2E] bg-[#b6b6b6] group grid place-items-center border-2 border-transparent rounded w-[70px] h-[70px] hover:border-2 hover:shadow-[0px_0px_20px_orange]  hover:shadow-orange-600  transition-all duration-300 hover:rounded-full hover:border-orange-600  ">
+                    className="dark:bg-[#2E2E2E] bg-[#cbcbcb] group grid place-items-center border-2 border-transparent rounded w-[70px] h-[70px] hover:border-2 hover:shadow-[0px_0px_20px_orange]  hover:shadow-orange-600  transition-all duration-300 hover:rounded-full hover:border-orange-600  ">
                     <img
+                      loading="lazy"
                       className="w-[40px] group-hover:w-[35px] transition-all duration-300 group-hover:h-[35px] h-[40px] rounded"
                       src={item.img}
                       alt=""
@@ -120,6 +123,7 @@ const About = () => {
                     key={item.id}
                     className="dark:bg-[#2E2E2E] bg-[#b6b6b6] group grid place-items-center border-2 border-transparent rounded w-[70px] h-[70px] hover:border-2 hover:shadow-[0px_0px_20px_orange]  hover:shadow-orange-600  hover:rounded-full hover:border-orange-600  transition-all duration-500">
                     <img
+                      loading="lazy"
                       className="w-[40px] group-hover:w-[35px] transition-all duration-300 group-hover:h-[35px] h-[40px] rounded"
                       src={item.img}
                       alt=""

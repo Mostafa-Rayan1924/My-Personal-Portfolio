@@ -4,10 +4,28 @@ import cssImg from "../assets/css.svg";
 import reactImg from "../assets/ReactIMG.png";
 import nextImg from "../assets/nextIMG.svg";
 import js from "../assets/java.png";
-import { IoLogoAppleAr } from "react-icons/io5";
-import { RiJavascriptFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 const Services = () => {
+  const data = [
+    {
+      id: 1,
+      images: [htmlImg, cssImg],
+      title: "HTML & CSS",
+      desc: "I am proficient in creating responsive and visually appealing websites using HTML and CSS.",
+    },
+    {
+      id: 1,
+      images: [js],
+      title: "Java Script",
+      desc: "I have a strong command of JavaScript and can develop interactive and dynamic web applications.",
+    },
+    {
+      id: 1,
+      images: [reactImg, nextImg],
+      title: "React & Next",
+      desc: "Create your complex web app for your business using React or Next.js framework",
+    },
+  ];
   return (
     <div id="Services" className="my-[150px] relative">
       {/* circles to ui */}
@@ -51,100 +69,45 @@ const Services = () => {
           repeat: Infinity,
         }}
         className="absolute blur w-[15px] h-[15px] bg-violet-600 top-4 right-5 rounded-full "></motion.div>
-      {/* end circles */}
-      <MainTitle title={"My Services"} p={"This is what i can do for you"} />
+      <MainTitle title={"My Services"} p={"Here’s how I can help you."} />
       <div className="container   grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
-        <motion.div
-          className="bg-[#b6b6b6]  dark:bg-[#2E2E2E] flex items-center justify-center px-[17px]   flex-col mx-auto text-center rounded-3xl w-[300px] h-[350px] relative before:w-[300px] before:absolute  before:h-[350px] before:bg-teal-800 before:rounded-3xl before:z-[-1] before:transition-all before:duration-300 cardAnimate  "
-          initial={{
-            opacity: 0,
-            y: 60,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-            transition: {
-              duration: 0.3,
-              delay: 0.1,
-            },
-          }}>
-          <div className="">
-            <div className="flex items-center justify-center gap-3">
-              <img
-                className="rotate-[10deg] ssa w-[50px]"
-                src={htmlImg}
-                alt=""
-              />
-              <img className="-rotate-[10deg] w-[50px]" src={cssImg} alt="" />
+        {data.map((item, index) => (
+          <motion.div
+            className={`even:bg-bgGradient even:text-white bg-[#b6b6b6]  dark:bg-[#2E2E2E] flex items-center justify-center px-[17px]   flex-col mx-auto text-center rounded-3xl w-[300px] h-[350px] relative before:w-[300px] before:absolute  before:h-[350px] before:bg-teal-800 before:rounded-3xl before:z-[-1] before:transition-all before:duration-300 cardAnimate  `}
+            initial={{
+              opacity: 0,
+              y: 60,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 0.3,
+                delay: 0.1,
+              },
+            }}>
+            <div className="flex items-center gap-3">
+              {item.images.map((img, index) => (
+                <img
+                  className={`w-[50px] rounded-lg ${
+                    index == 1 ? "rotate-[-10deg]" : ""
+                  } rotate-[10deg] h-[50px] object-contain`}
+                  src={img}
+                  alt={img.desc}
+                />
+              ))}
             </div>
-            <h2 className="font-bold mt-3 mb-4   text-3xl ">HTML & CSS</h2>
-            <p className="text-gray-700 dark:text-gray-400 text-center text-lg">
-              I am proficient in creating responsive and visually appealing
-              websites using HTML and CSS.
+            <h2 className="font-bold mt-3 mb-4   text-3xl ">{item.title}</h2>
+            <p
+              className={` ${
+                index == 1
+                  ? "dark:text-gray-100"
+                  : "text-gray-800 dark:text-gray-300"
+              }  text-center text-lg`}>
+              {item.desc}
             </p>
-          </div>
-        </motion.div>
-        <motion.div
-          initial={{
-            opacity: 0,
-            y: 60,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-            transition: {
-              duration: 0.3,
-              delay: 0.3,
-            },
-          }}
-          className="bg-bgGradient text-white dark:bg-[#2E2E2E] flex items-center justify-center px-[17px]   flex-col mx-auto text-center rounded-3xl w-[300px] h-[350px]   ">
-          <div className="">
-            <div className="flex items-center justify-center gap-3">
-              <img className="rounded-xl w-[50px]" src={js} alt="" />
-            </div>
-            <h2 className="font-bold mt-3 mb-4 text-3xl text-white t ">
-              Java Script
-            </h2>
-            <p className=" text-gray-100 text-center text-lg">
-              I have a strong command of JavaScript and can develop interactive
-              and dynamic web applications.
-            </p>
-          </div>
-        </motion.div>
-        <motion.div
-          initial={{
-            opacity: 0,
-            y: 60,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-            transition: {
-              duration: 0.3,
-              delay: 0.5,
-            },
-          }}
-          className="bg-[#b6b6b6] dark:bg-[#2E2E2E] flex items-center justify-center px-[17px]   flex-col mx-auto text-center rounded-3xl w-[300px] h-[350px] relative before:w-[300px] before:absolute  before:h-[350px] before:bg-teal-800 before:rounded-3xl before:z-[-1] before:transition-all before:duration-300 cardAnimate   ">
-          <div className="">
-            <div className="flex items-center justify-center gap-3 ">
-              <img
-                className="rotate-[18deg]   w-[50px]"
-                src={reactImg}
-                alt=""
-              />
-              <img
-                className="-rotate-[10deg]  w-[50px] rounded-xl h-[50px]"
-                src={nextImg}
-                alt=""
-              />
-            </div>
-            <h2 className="font-bold mt-3 mb-4   text-3xl ">React & Next</h2>
-            <p className="text-gray-700 dark:text-gray-400 text-center text-lg">
-              Create your complex web app for your business using React or
-              Next.js framework
-            </p>
-          </div>
-        </motion.div>
+          </motion.div>
+        ))}
       </div>
     </div>
   );

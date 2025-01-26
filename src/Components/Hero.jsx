@@ -178,10 +178,10 @@ const Hero = () => {
               },
             }}
             className="text-gray-600 dark:text-gray-300 leading-relaxed sm:text-lg my-6">
-            I am a student in the College of Computers and Information.I studied
-            website programming in college in addition to personal study. I have
-            more than two years of experience in the field. I aspire to be the
-            person who crowns your front-ends.
+            I am a graduate of the College of Computers and Information. During
+            my studies, I focused on website programming, complementing it with
+            personal learning. With over two years of experience in the field, I
+            aspire to be the expert who brings your front-ends to life.
           </motion.p>
           <div className="flex items-center gap-3 mb-6 cursor-pointer">
             {dataSocial.map((item) => {
@@ -255,6 +255,7 @@ const Hero = () => {
 
         {/* right */}
         <motion.img
+          loading="lazy"
           initial={{
             scale: 0,
           }}

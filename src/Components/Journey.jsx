@@ -12,7 +12,7 @@ const Journey = () => {
     <div className="my-[150px]">
       <MainTitle
         title={"My Journey"}
-        p={"My programming journey from the beginning of college until now"}
+        p={"My programming journey from my college years to the present"}
       />
       <div className="mt-[50px] mx-auto md:m-0  relative after:absolute after:w-[5px] after:top-0 after:h-full dark:after:bg-[#2E2E2E]  after:bg-[#b6b6b6] after:left-[31px] md:after:left-1/2 after:ml-[-3px] after:z-[-1] ">
         <div className="container">
@@ -41,8 +41,8 @@ const Journey = () => {
                 2020 - 2024
               </small>
               <p className="text-gray-700 dark:text-gray-300">
-                I am a student in the College of Computers and Information,
-                Department of Information Systems
+                I am a graduate of the College of Computers and Information,
+                specializing in the Information Systems department.
               </p>
               <span className="h-0 w-0  sm:group-hover:border-l-[#f4280dc5] dark:md:border-r-transparent group-hover:border-r-[#f4280dc5] sm:group-hover:border-r-transparent transition-all duration-300 absolute top-[35px] z-[1] border-[15px] border-transparent border-r-[#b6b6b6]  dark:border-r-[#2E2E2E] md:border-r-transparent  md:border-l-[#b6b6b6] md:dark:border-l-[#2E2E2E] left-[50.5px] md:left-auto md:right-[21px]"></span>
             </div>
@@ -72,8 +72,8 @@ const Journey = () => {
                 Html-Css-Js
               </small>
               <p className="text-gray-700 dark:text-gray-300">
-                I learned the basics of Front End strongly from college through
-                summer training and YouTube with the best programmers in the
+                I built a strong foundation in Front-End development through my
+                college studies and summer training with top programmers in the
                 field.
               </p>
               <span className="h-0 w-0 group-hover:border-r-[#f4280dc5] transition-all duration-300 absolute top-[35px] z-[1] border-[15px] border-transparent border-r-[#b6b6b6] dark:border-r-[#2E2E2E] left-[50.5px] md:left-[22px]"></span>
@@ -101,12 +101,12 @@ const Journey = () => {
             <div className="px-[30px] dark:hover:border-[#f4280dc5] transition-all duration-300 border-2 border-[#969696] dark:border-[#484848] group hover:border-2 hover:border-[#f4280dc5] py-[20px] bg-[#b6b6b6] dark:bg-[#2E2E2E] rounded-lg text-[13px] md:text-[15px] left-0">
               <h2 className="text-3xl">Experience</h2>
               <small className="inline-block text-[15px] mb-[15px] text-main font-bold">
-                +2 Years
+                +3 Years
               </small>
               <p className="text-gray-700 dark:text-gray-300">
-                I have more than two years of experience in the field of
-                front-end and programming and have implemented large projects
-                over the past years
+                I have over three years of experience in front-end development
+                and programming, during which I've successfully implemented
+                large-scale projects.
               </p>
               <span className="h-0 w-0  sm:group-hover:border-l-[#f4280dc5] dark:md:border-r-transparent group-hover:border-r-[#f4280dc5] sm:group-hover:border-r-transparent transition-all duration-300 absolute top-[35px] z-[1] border-[15px] border-transparent border-r-[#b6b6b6]  dark:border-r-[#2E2E2E] md:border-r-transparent  md:border-l-[#b6b6b6] md:dark:border-l-[#2E2E2E] left-[50.5px] md:left-auto md:right-[21px]"></span>
             </div>
@@ -175,12 +175,12 @@ const Journey = () => {
             <div className="px-[30px] dark:hover:border-[#f4280dc5] transition-all duration-300 border-2 border-[#969696] dark:border-[#484848] group hover:border-2 hover:border-[#f4280dc5] py-[20px] bg-[#b6b6b6] dark:bg-[#2E2E2E] rounded-lg text-[13px] md:text-[15px] left-0">
               <h2 className="text-3xl">FrameWork</h2>
               <small className=" inline-block mb-[15px] text-[15px] text-main font-bold">
-                React
+                React & Next
               </small>
               <p className="text-gray-700 dark:text-gray-300">
-                I use Framework React Js to build my projects, and I obtained a
-                certified certificate from Udemy and built my large projects
-                using it.
+                I use both React.js and Next.js to build my projects, and I have
+                earned a certified certificate from Udemy. I've successfully
+                developed large-scale projects using these technologies.
               </p>
 
               <span className="h-0 w-0  sm:group-hover:border-l-[#f4280dc5] dark:md:border-r-transparent group-hover:border-r-[#f4280dc5] sm:group-hover:border-r-transparent transition-all duration-300 absolute top-[35px] z-[1] border-[15px] border-transparent border-r-[#b6b6b6]  dark:border-r-[#2E2E2E] md:border-r-transparent  md:border-l-[#b6b6b6] md:dark:border-l-[#2E2E2E] left-[50.5px] md:left-auto md:right-[21px]"></span>
