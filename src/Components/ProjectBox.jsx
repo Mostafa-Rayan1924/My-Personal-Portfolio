@@ -26,11 +26,7 @@ const ProjectBox = ({ item }) => {
             target="_blank"
             rel="noopener noreferrer"
             className="bg-bgGradient relative -left-6 group-hover:left-0 transition-all duration-300 w-[45px] h-[45px] text-xl grid place-items-center text-white rounded-full"
-            href={
-              item.name === "Mg Company"
-                ? "https://final-mg-sys.onrender.com/"
-                : item.linkProject
-            }>
+            href={item.linkProject}>
             <FaLink />
           </a>
           <a
