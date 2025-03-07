@@ -7,7 +7,7 @@ import { IoLogoInstagram } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 import { FaAngleDoubleDown } from "react-icons/fa";
-import cv from "../assets/Mostafa Ahmed.cv.pdf";
+
 const Hero = () => {
   // array of social icons
   let dataSocial = [
@@ -220,7 +220,9 @@ const Hero = () => {
           </div>
           <motion.a
             target="_blank"
-            href={cv}
+            href={
+              "https://drive.google.com/file/d/18B5EwBUDyJi_v4GudxJpW38iHgqk8Awn/view?usp=drive_link"
+            }
             initial={{
               opacity: 0,
               y: 40,
@@ -241,9 +243,8 @@ const Hero = () => {
                 damping: 6,
               },
             }}
-            className="flex cursor-pointer text-white   group bg-bgGradient w-fit px-6 py-[6px] rounded-full items-center gap-2 text-lg capitalize"
-            download={true}>
-            download resume
+            className="flex cursor-pointer text-white   group bg-bgGradient w-fit px-6 py-[6px] rounded-full items-center gap-2 text-lg capitalize">
+            My Resume
             <FaCloudDownloadAlt className="group-hover:animate-bounce" />
           </motion.a>
           <a
