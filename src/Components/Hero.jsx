@@ -221,7 +221,7 @@ const Hero = () => {
           <motion.a
             target="_blank"
             href={
-              "https://drive.google.com/file/d/1gg_sg4QR-I_nxExh5IW1BZz1hApDk6sF/view?usp=sharing"
+              "https://drive.google.com/file/d/1It8I-W7L-h7j3b49ILtVmGJsI0PhKS3r/view?usp=sharing"
             }
             initial={{
               opacity: 0,
