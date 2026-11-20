@@ -41,7 +41,7 @@ const ProjectBox = ({ item }) => {
       <div className="bg-[#c8c8c8] capitalize dark:bg-[#2E2E2E] p-2">
         <div className="flex items-center border-b border-[#adadad] dark:border-[#484848] pb-[15px] mb-3 flex-wrap justify-between">
           <h2 className="text-lg ProName ">{item.name}</h2>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1">
             {item.techImage.map((tech, index) => (
               <img
                 key={index}

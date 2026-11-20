@@ -25,7 +25,7 @@ const Testimonials = () => {
             focus: "center",
             gap: "20px",
             isNavigation: true,
-            // autoplay: true,
+            autoplay: true,
             type: "loop",
             rewind: true,
           }}>
